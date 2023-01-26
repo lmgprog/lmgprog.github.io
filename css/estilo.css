@@ -4,7 +4,8 @@
     
     padding: 2rem;
     border-bottom: 2px solid orangered;
-   
+opacity: 85%;
+   background-color: rgb(19, 19, 19);
     
 }
 
@@ -25,10 +26,25 @@
 }
 
 .hero{
-    background-color: white;
+    background-image: url(/src/fondo_cv.png);
     min-height: 450px;
-    color: orangered;
+    color: white;
 }
+
+
+
+.navbar-nav a{
+    color: white;
+    
+}
+.navbar-nav a:hover{
+    color: orangered;
+    
+}
+
+
+
+
 
 section{
 display: flex;
@@ -66,13 +82,13 @@ h1{
 }
 
 body hr{
-    opacity: 75%;
+    
     border: solid 2px orangered;
+    opacity: 70%;
 }
 .cards-wrapper{
     display: flex;
 }
-
 
   .buttons a {
     text-decoration: none;
@@ -81,15 +97,23 @@ body hr{
     height: 60px;
     line-height: 60px;
     text-align: center;
-    background: #314652;
+    background: rgb(19, 19, 19);
     color: #f1f1f1;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
+    border: solid 2px orangered;
   }
   
   .buttons a:hover {
     transform: scale(1.2);
+  }
+
+  #contenedor_general_del_proyecto{
+    background-color: white;
+    border: 3px solid orangered;
+    border-radius: 15px;
+    
   }
   
 

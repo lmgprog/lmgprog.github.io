@@ -22,34 +22,37 @@
     <title>Luis Mauricio - Mi Curriculum</title>
 </head>
 
-<body>
+<body style="background-image: url(/src/fondo_cv.png);">
+
     <!-- Barra de Navegacion -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md  bg-dark">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+            <button style=" background-repeat: no-repeat; background-image: url(/src/icono_para_menu_cv.png) "
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-toggler">
                 <a class="navbar-brand" href="#">
-                    <img src="/src/icono_portada_cv.png" width="40" alt="errorde icono">
+                    <img src="/src/icono_cv.png" width="60" alt="errorde icono">
                 </a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link active" aria-current="page" href="#contenedor_sobre_mi">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencia</a>
+                        <a class="nav-link" href="#mi_experiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-orange" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Contacto</button>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
+
                 </ul>
 
             </div>
         </div>
     </nav>
+
     <!-- portada -->
     <section class="hero align-items-strech">
         <div class="hero-principal">
@@ -62,129 +65,128 @@
         </div>
     </section>
 
+    <div id="contenedor_general_del_proyecto" class="container">
 
+        <!-- contenedor sobre mi -->
+        <div  id="contenedor_sobre_mi" class="container" style="padding: 10px;">
 
-    <!-- contenedor sobre mi -->
-    <div id="contenedor_sobre_mi" class="container" style="background-color: white">
-        <hr>
-        <h4>Sobre mi:</h4>
-        <p style="text-align: justify;">Programador de sistemas con 10 años de experiencia mejorando el
-            funcionamiento de las organizaciones con soluciones de sistemas de
-            información. Reconocido por recomendar nuevas tecnologías para
-            mejorar los sistemas existentes e introducir nuevos programas.</p>
+            <h4>Sobre mi:</h4>
+            <p style="text-align: justify;">Programador de sistemas con 10 años de experiencia <b>mejorando el
+                    funcionamiento de las organizaciones</b> con soluciones de sistemas de
+                información. Reconocido por recomendar nuevas tecnologías para
+                mejorar los sistemas existentes e introducir nuevos programas.</p>
 
+            <!-- lenguajes de programacion -->
 
-        <!-- lenguajes de programacion -->
+            <h5>Manipulacion de los lenguajes</h5>
 
-        <h5>Manipulacion de los lenguajes</h5>
-
-        <div id="contenedor_carta" class="card-group">
-            <div class="card">
-                <img src="/src/img_html_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto"
-                    alt="Hollywood Sign on The Hill" />
-                <div class="card-body">
-                    <h5 class="card-title">HTML</h5>
-                    <p class="card-text">
-                        Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y
-                        desplegar
-                        una página web y sus contenidos.
-                    </p>
+            <div id="contenedor_carta" class="card-group">
+                <div class="card">
+                    <img src="/src/img_html_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto"
+                        alt="Hollywood Sign on The Hill" />
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">
+                            Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y
+                            desplegar
+                            una página web y sus contenidos.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/img_css_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto"
+                        alt="Palm Springs Road" />
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Significado en español Hojas de estilo en cascada, es un lenguaje de
+                            diseño
+                            gráfico
+                            para
+                            definir y crear la presentación de un documento estructurado escrito en un lenguaje de
+                            marcado</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/img_js_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto "
+                        alt="Los Angeles Skyscrapers" />
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">
+                            es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define
+                            como
+                            orientado a objetos,basado en prototipos, imperativo, débilmente tipado y dinámico.
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/src/img_css_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto"
-                    alt="Palm Springs Road" />
-                <div class="card-body">
-                    <h5 class="card-title">CSS</h5>
-                    <p class="card-text">Significado en español Hojas de estilo en cascada, es un lenguaje de
-                        diseño
-                        gráfico
-                        para
-                        definir y crear la presentación de un documento estructurado escrito en un lenguaje de
-                        marcado</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/img_js_cv.png" style="height:200px; width: 200px;" class="card-img-top mx-auto "
-                    alt="Los Angeles Skyscrapers" />
-                <div class="card-body">
-                    <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">
-                        es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define
-                        como
-                        orientado a objetos,basado en prototipos, imperativo, débilmente tipado y dinámico.
-                    </p>
-                </div>
-            </div>
+            <hr>
+
         </div>
+        <!-- contenedor general experiencia -->
+        <div id="mi_experiencia" class="container">
+            <h4>Mi experiencia</h4>
 
+            <div class="col">
+                <div class="card  mb-2">
+                    <div class="card-body">
+                        <h5>Segula Technologies</h5>
+                        <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
 
-        <hr>
+                        <ul>
+                            <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes
+                                durante el
+                                transcurso de cada proyecto.</li>
+                            <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir
+                                los
+                                requisitos de cada equipo.</li>
+                            <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-2">
+                    <div class="card-body">
+                        <h5>Segula Technologies</h5>
+                        <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
+                        <ul>
+                            <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes
+                                durante el
+                                transcurso de cada proyecto.</li>
+                            <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir
+                                los
+                                requisitos de cada equipo.</li>
+                            <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Segula Technologies</h5>
+                        <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
+
+                        <ul>
+                            <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes
+                                durante el
+                                transcurso de cada proyecto.</li>
+                            <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir
+                                los
+                                requisitos de cada equipo.</li>
+                            <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p style="padding: 5px;">
+            </p>
+        </div>
     </div>
-
-
-    <!-- contenedor general experiencia -->
-    <div class="container">
-        <h4>Mi experiencia</h4>
-
-        <div class="col">
-            <div class="card  mb-2">
-                <div class="card-body">
-                    <h5>Segula Technologies</h5>
-                    <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
-                    
-                    <ul>
-                        <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes durante el
-                            transcurso de cada proyecto.</li>
-                        <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir los
-                            requisitos de cada equipo.</li>
-                        <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
-                    </ul>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-2">
-                <div class="card-body">
-                    <h5>Segula Technologies</h5>
-                    <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
-                    
-                    <ul>
-                        <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes durante el
-                            transcurso de cada proyecto.</li>
-                        <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir los
-                            requisitos de cada equipo.</li>
-                        <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <div class="card-body">
-                    <h5>Segula Technologies</h5>
-                    <h6>Programador de sistemas - 02/2018 al 11/2020</h6>
-                    
-                    <ul>
-                        <li>Experiencia revisando códigos, hojas de ruta de proyectos y requisitos cambiantes durante el
-                            transcurso de cada proyecto.</li>
-                        <li>Supervisó la instalación de programas de software y sistemas de hardware para cumplir los
-                            requisitos de cada equipo.</li>
-                        <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
-                    </ul>   
-                </div>
-            </div>
-        </div>
-        <hr>
-    </div>
-
-
-
-
 
     <!-- Contenedor redes -->
-    <div class="container-fluid" style="margin-bottom: 15px;">
+
+    <div class="container-fluid" style="margin-bottom: 15px; margin-top: 15px;">
         <section class="buttons">
             <div class="row">
                 <div class="col"> <a href="" class="fa fa-facebook"></a></div>
@@ -196,34 +198,6 @@
     </div>
 
 
-    <!-- Diseño de formulario -->
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Dejenos un mensaje</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label" required>Su correo</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Mensaje:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 
