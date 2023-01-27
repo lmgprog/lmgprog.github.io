@@ -1,96 +1,85 @@
-
-
 .navbar {
-    
-    padding: 2rem;
+
+    padding: 5px;
     border-bottom: 2px solid orangered;
-opacity: 85%;
-   background-color: rgb(19, 19, 19);
-    
+    opacity: 82%;
+    background-color: rgb(19, 19, 19);
+
 }
-
-
 
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
-    
-
+    border-color: white;
 }
 
 @media screen and (max-width:767px) {
-    .navbar-brand{
+    .navbar-brand {
         display: none;
     }
-
 }
 
-.hero{
+.hero {
     background-image: url(/src/fondo_cv.png);
     min-height: 450px;
     color: white;
 }
 
-
-
-.navbar-nav a{
+.navbar-nav a {
     color: white;
-    
+    border-color: white;
 }
-.navbar-nav a:hover{
+
+.navbar-nav a:hover {
     color: orangered;
-    
 }
 
-
-
-
-
-section{
-display: flex;
-flex-direction:column;
-align-items: center;
-justify-content: center;
-text-align: center;
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
 
 }
 
-.hero-principal{
+.hero-principal {
     padding: 3rem;
 
 }
-.hero-imagen-desarrollador{
+
+.hero-imagen-desarrollador {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin:20px; 
+    margin: 20px;
     border: solid 5px orangered;
 }
 
-#imagen_lenguajes img{
+#imagen_lenguajes img {
     width: 100%;
     height: 250px;
 }
 
-
-
-#contenedor_lenguajes{
+#contenedor_lenguajes {
     text-align: center;
 }
 
-body hr{
-    
+body hr {
+
     border: solid 2px orangered;
     opacity: 70%;
 }
-.cards-wrapper{
+
+.cards-wrapper {
     display: flex;
 }
 
-  .buttons a {
+.buttons a {
     text-decoration: none;
     font-size: 28px;
     width: 60px;
@@ -103,23 +92,19 @@ body hr{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
     transition: all .4s ease-in-out;
     border: solid 2px orangered;
-  }
-  
-  .buttons a:hover {
-    transform: scale(1.2);
-  }
+}
 
-  #contenedor_general_del_proyecto{
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
+#contenedor_general_del_proyecto {
     background-color: white;
     border: 3px solid orangered;
     border-radius: 15px;
-    
-  }
-  
 
+}
 
-
-
-
-
-
+body{
+    font-family: sans-serif;
+}
