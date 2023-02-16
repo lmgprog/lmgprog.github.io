@@ -107,4 +107,24 @@ body hr {
 
 body{
     font-family: sans-serif;
+    background-image: url(/src/fondo_cv.png);
 }
+
+.card img{
+    height:150px; 
+    width: 150px;
+     margin-top: 15px;
+}
+
+#contenedor_redes{
+    margin-bottom: 15px; 
+    margin-top: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+
