@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
-    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/src/icono_cv.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +12,11 @@
     <meta name="keywords" content="htm, css, javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
-    <script src="/js/javascript.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <title>Mi curriculum Vitae</title>
+    <meta property="og:Curriculum"content="Este es mi curriculum"/>
 </head>
 
 <body>
@@ -26,18 +24,18 @@
     <!-- Barra de Navegacion -->
     <nav class="navbar navbar-expand-md  bg-dark">
         <div class="container-fluid">
-            
+
             <button style=" background-repeat: no-repeat; background-image: url(/src/icono_para_menu_cv.png) "
                 class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-           
+
             <div class="collapse navbar-collapse" id="navbar-toggler">
                 <a class="navbar-brand" href="#">
                     <img src="/src/icono_cv.png" width="60" alt="error_de_icono_miniatura">
                 </a>
-        
+
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#contenedor_sobre_mi">Sobre mi</a>
@@ -153,7 +151,7 @@
                             <li>Capacidad para realizar mejoras en los sistemas informáticos de la empresa</li>
                         </ul>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -175,19 +173,20 @@
                     </div>
                 </div>
             </div>
-          
+
         </div>
         <!-- contenedor contactos -->
         <div id="contacto" class="container">
             <hr>
 
             <div style="text-align: center;" class="row">
-                
+
                 <div class="col-lg"><img src="/src/img_dom_cv.png" alt="error_icono_dom">
                     <p>Calle Roca Nro. 777 (Mnes.)</p>
                 </div>
                 <div class="col-lg"><img src="/src/img_correo_cv.png" alt="error_icono_del_correo">
-                    <p><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">mauriciogomez.documentaciones@gmail.com</a></p>
+                    <p><a href="" data-bs-toggle="modal"
+                            data-bs-target="#formulario_modal">mauriciogomez.documentaciones@gmail.com</a></p>
                 </div>
                 <div class="col-lg"><img src="/src/img_wpp_cv.png" alt="error_icono_wpp">
                     <p>+549XXXXXX5/+549XXXXXX5</p>
@@ -209,65 +208,56 @@
             </div>
         </section>
     </div>
-    
-    
 
 
-    <div class="modal" tabindex="-1">
+    <!-- Modal se abre al hacer click en el link del correo electronico en contacto -->
+    <div class="modal fade" id="formulario_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Título del modal</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ponte en contacto con migo.!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="label_input_micorreo" class="form-label">Mi correo:</label>
+                        <input type="email" class="form-control" id="mi_correo"
+                            value="mauriciogomez.documentaciones@gmail.com" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="label_input_email_titular" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email_titular"
+                            placeholder="Ingrese su correo electronico">
+                    </div>
+                    <div class="mb-3">
+                        <label for="label_input_nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="label_input_mensaje" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribenos un mensaje"
+                            style="resize: none;"></textarea>
+                    </div>
+                    <b>
+                        <p id="estado" style="text-align: center; margin-top: 30px;"></p>
+                    </b>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button onclick=" Verificar()" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <p>El texto del cuerpo modal va aquí.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar cambios</button>
-            </div>
-          </div>
         </div>
-      </div>
-     
-      
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Ponte en contacto con migo.!</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Mi correo:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" value="mauriciogomez.documentaciones@gmail.com" disabled>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">E-Mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electronico">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;" ></textarea>
-                  </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Enviar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-        
+    </div>
     </div>
 
+
+    <script src="/js/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
